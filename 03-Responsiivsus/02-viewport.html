@@ -1,0 +1,48 @@
+<html class="no-js">
+<head>
+  <title>Meedia päringud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="modernizr-custom.js"></script>
+  <style>
+    header, footer { border: 1px solid blue; }
+    .content { border: 1px solid green; }
+    .sidebar { border: 1px solid red; }
+    header, .sidebar { display: block; }
+    p { margin: 50; }
+
+    @media screen and (max-width: 400px) {
+      header, .sidebar { display: none; }
+      p { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meedia päringud</h1>
+  </header>
+  <div class="sidebar">
+      <p>Sidebar</p>
+      <p>See siin on küljepealne tekst, mis kirjeldab mingit seotud infot</p>
+    </div>
+  <div class="content">
+    <p>Sisu</p>
+    <div id="Result"></div>    
+
+    <script>
+        if (Modernizr.canvas) {
+          document.getElementById('Result').innerHTML += "<b>HAS</b> Canvas";
+        } else {
+          document.getElementById('Result').innerHTML += "<b>DOES NOT HAVE</b> Canvas";
+        }
+    </script>
+
+    <p>See on dokumendi sisu ning seda võib väga palju olla.></video></p>
+  </div>
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+
+</body>
+</html>

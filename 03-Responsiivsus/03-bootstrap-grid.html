@@ -1,0 +1,64 @@
+<html class="no-js">
+<head>
+  <title>Meedia päringud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="modernizr-custom.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    header, footer { border: 1px solid blue; }
+    div { border: 1px solid orange; }
+    .content { border: 1px solid green; }
+    .sidebar { border: 1px solid red; }
+    header, .sidebar { display: block; }
+    p { margin: 50; }
+
+    @media screen and (max-width: 400px) {
+      header, .sidebar { display: none; }
+      p { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meedia p&auml;ringud ja Grid</h1>
+  </header>
+  <div class="sidebar">
+      <p>Sidebar</p>
+      <p>See siin on k&uuml;ljepealne tekst, mis kirjeldab mingit seotud infot</p>
+    </div>
+  <div class="content">
+    <p>Sisu</p>
+    <div id="Result"></div>    
+
+    <script>
+        if (Modernizr.canvas) {
+          document.getElementById('Result').innerHTML += "<b>HAS</b> Canvas";
+        } else {
+          document.getElementById('Result').innerHTML += "<b>DOES NOT HAVE</b> Canvas";
+        }
+    </script>
+
+    <p>See on dokumendi sisu ning seda v&otilde;ib v&auml;ga palju olla.></video></p>
+
+    <div class="row">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>    
+
+  </div>
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+
+</body>
+</html>

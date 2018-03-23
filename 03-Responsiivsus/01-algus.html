@@ -1,0 +1,70 @@
+<html class="no-js">
+<head>
+  <title>Meedia päringud</title>
+  <script src="modernizr-custom.js"></script>
+  <style>
+    header, footer { 
+      border: 1px solid blue;
+      margin-left: 160px; /* Same as the width of the sidebar */
+      padding: 0px 10px;
+    }
+    .content { 
+      border: 1px solid green; 
+      margin-left: 160px; /* Same as the width of the sidebar */
+      padding: 0px 10px;
+    }
+    .sidebar {
+      border: 1px solid red;
+      height: 100%; /* Full-height: remove this if you want "auto" height */
+      width: 160px; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 20px;
+    }
+
+    .sidebar p {
+      color: whitesmoke;
+    }
+
+    header, .sidebar { display: block; }
+    p { margin: 50; }
+
+    @media screen and (max-width: 400px) {
+      .sidebar { padding-top: 15px; }
+      .sidenav a {font-size: 18px;}
+      p { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meedia päringud</h1>
+  </header>
+  <div class="sidebar">
+      <p>Sidebar</p>
+      <p>See siin on küljepealne tekst, mis kirjeldab mingit seotud infot</p>
+    </div>
+  <div class="content">
+    <p>Sisu</p>
+    <div id="Result"></div>    
+
+    <script>
+        if (Modernizr.canvas) {
+          document.getElementById('Result').innerHTML += "<b>HAS</b> Canvas";
+        } else {
+          document.getElementById('Result').innerHTML += "<b>DOES NOT HAVE</b> Canvas";
+        }
+    </script>
+    <p>See on dokumendi sisu ning seda võib väga palju olla.></video></p>
+  </div>
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+
+</body>
+</html>

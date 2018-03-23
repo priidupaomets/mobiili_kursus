@@ -1,0 +1,15 @@
+{
+  "name": "node-browscap",
+  "version": "1.0.0",
+  "description": "Browscap faili kasutamine Node veebiserveris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browscap": "^0.2.0",
+    "express": "^4.16.3"
+  }
+}

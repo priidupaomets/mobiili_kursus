@@ -1,0 +1,19 @@
+<html class="no-js">
+<head>
+  <title>Omaduste test</title>
+  <script src="modernizr-custom.js"></script>
+</head>
+<body>
+  <h1>Omaduste test</h1>
+  <div id="Result">
+  </div>
+
+  <script>
+  if (Modernizr.canvas) {
+    document.getElementById('Result').innerHTML += "<b>HAS</b> Canvas";
+  } else {
+    document.getElementById('Result').innerHTML += "<b>DOES NOT HAVE</b> Canvas";
+  }
+  </script>
+</body>
+</html>
