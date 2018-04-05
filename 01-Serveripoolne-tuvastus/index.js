@@ -72,18 +72,18 @@ app.get("/", function(req, res) {
     var browser = browscap.getBrowser(ua);
 
     console.log(ua);
-    console.log("Browser: " + browser['Browser'] + " " + browser['Version']);
-    console.log('Parent: ' + browser['Parent']);
-    console.log('Platform: ' + browser['Platform']);
+    console.log("Browser: " + browser.Browser + " " + browser.Version);
+    console.log('Parent: ' + browser.Parent);
+    console.log('Platform: ' + browser.Platform);
     console.log('Device Type: ' + browser['Device Type']);
-    console.log('isMobileDevice: ' + browser['isMobileDevice']);
-    console.log('isTablet: ' + browser['isTablet']);
+    console.log('isMobileDevice: ' + browser.isMobileDevice);
+    console.log('isTablet: ' + browser.isTablet);
 
     res.send('<h1>Browscap</h1>' +
         '<h2>User-Agent: ' + ua + '</h2>' +
-        '<h2>' + browser['Browser'] + " " + browser['Version'] + '<br>' +
-        'isMobileDevice: ' + browser['isMobileDevice'] + '<br>' +
-        'isTablet: ' + browser['isTablet'] + '</h2>');
+        '<h2>' + browser.Browser + " " + browser.Version + '<br>' +
+        'isMobileDevice: ' + browser.isMobileDevice + '<br>' +
+        'isTablet: ' + browser.isTablet + '</h2>');
 }); 
 
 // Vaikimisi vastus, kui muid teekondi ei leitud 
