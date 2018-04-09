@@ -1,0 +1,13 @@
+{
+  "name": "ee.tlu.hk.priidu.simplecalc",
+  "version": "1.0.0",
+  "displayName": "Simple Calc",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "~6.3.0"
+  }
+}
