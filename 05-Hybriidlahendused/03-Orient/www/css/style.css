@@ -1,0 +1,49 @@
+.content-container {
+	width: 100%;
+	height: 210px;
+    /*border: solid 2px red;*/
+}
+
+#motionBoard {
+    /*border: solid 1px black;*/
+    /*-webkit-transform:translateX(-200px); */
+}
+
+#motionBoard  canvas {
+    position: fixed;
+    left: 33%;
+    border: solid 1px green;
+}
+
+.error {
+    color: red;
+}
+
+#compass-rose {
+    position:fixed;
+    width:200px;
+    height:200px;
+    left:50%;
+  
+    background:url(../img/compass_rose.png);
+
+    -webkit-transform:translateX(-100px);
+    transform:translateX(-100px);
+}
+
+#compass-needle {
+    position:fixed;
+    background:url(../img/needle.png);
+    width:200px;
+    height:200px;
+    z-index:1000;
+    left:50%;
+
+    -webkit-transform:translateX(-100px);
+    transform:translateX(-100px);
+	
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}

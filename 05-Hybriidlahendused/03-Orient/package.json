@@ -1,0 +1,21 @@
+{
+  "name": "ee.tlu.hk.priidu.orient",
+  "version": "1.0.0",
+  "displayName": "Orient",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-device-orientation": {},
+      "cordova-plugin-device-motion": {},
+      "cordova-plugin-geolocation": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~6.0.0",
+    "cordova-plugin-device-orientation": "~1.0.6",
+    "cordova-plugin-device-motion": "~1.2.4",
+    "cordova-plugin-geolocation": "~2.4.3"
+  }
+}

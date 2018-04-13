@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Orient - Sensor app</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: https://ssl.gstatic.com https://maps.googleapis.com https://csi.gstatic.com http://fonts.googleapis.com https://fonts.googleapis.com http://fonts.gstatic.com https://fonts.gstatic.com https://maps.gstatic.com   https://developers.google.com https://mts.googleapis.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com http://fonts.gstatic.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com; media-src *" />
+
+    </head>
+    <body>
+        <header >
+			<h1>Orient - sensorite kasutamine</h1>
+		</header>
+			
+		<div class="component">
+			<h2>Kompass</h2>
+			<div id="compass-heading"></div>
+			<div class="content-container">
+				<div id="compass-rose"></div>
+				<div id="compass-needle"></div>
+			</div>
+			<div id="compass-error" class="error"></div>
+		</div>
+		
+		<div class="component">
+			<h2>Liikumine</h2>
+			<div id="motion-info"></div>
+			<div class="content-container" id="motionBoard">
+				<!--<canvas id="board" width="400px" height="350px"></canvas>-->
+			</div>
+			<div id="accelerator-error" class="error"></div>
+		</div>
+	
+		<div class="component">
+			<h2>Asukoht</h2>
+			<div id="location">Teadmata
+			</div>
+			<div id="address">Aadress teadmata
+			</div>
+			<div id="map-error" class="error"></div>
+		</div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/app/index.js"></script>
+        
+    </body>
+</html>
