@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      TO-DO List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let todo of todos">
+      {{todo.title}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
