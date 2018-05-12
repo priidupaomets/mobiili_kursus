@@ -59,5 +59,7 @@ export class DataProvider {
     if (index !== -1) {
       this.todos.splice(index, 1);
     }
+
+    this.storage.set('todoData', this.todos);    
   }
 }
