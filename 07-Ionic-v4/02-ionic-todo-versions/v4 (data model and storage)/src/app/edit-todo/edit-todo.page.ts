@@ -13,9 +13,9 @@ export class EditTodoPage implements OnInit {
 
   public todo: Todo;
 
-  constructor(private route: ActivatedRoute, private navCtrl: NavController, 
+  constructor(private route: ActivatedRoute, private navCtrl: NavController,
               private dataService: DataService) {
-    this.todo = { id: 0, title: '', description: '' };
+    this.todo = new Todo();
   }
 
   ngOnInit() {
