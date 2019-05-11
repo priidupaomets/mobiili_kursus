@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Listy
+    </ion-title>
+    <ion-buttons slot="end">
+      <!-- <ion-button (click)="addList()" *ngIf="!editing">
+        <ion-icon name="add"></ion-icon>
+      </ion-button> -->
+      <ion-button (click)="toggleEdit()">{{editButton}}</ion-button>
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="reorderLists($event)" [disabled]="!editing">
+      <ion-item-sliding *ngFor="let list of dataService.lists" >
+        <ion-item (click)="selectList(list)">
+          <ion-label>{{list.title}}</ion-label>
+          <ion-badge>{{list.items.length}}</ion-badge>
+          <ion-reorder *ngIf="editing"></ion-reorder>
+        </ion-item>
+
+        <ion-item-options side="end" icon-start (ionSwipe)="confirmDeleteList(list)" *ngIf="!editing">
+          <ion-item-option color="danger" expandable (click)="confirmDeleteList(list)">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+            <!--ion-label>Delete...</ion-label-->
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-reorder-group>
+  </ion-list>
+      
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="addList()" size="small" [disabled]="editing">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

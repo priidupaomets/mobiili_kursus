@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="dataService.currentList != null ? '/tabs/lists/todo-list/' + dataService.currentList.id : '/tabs/lists'" ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Todo</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirmDeleteTodo()">
+        <ion-icon icon-only name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label position="floating">Title</ion-label>
+          <ion-input [(ngModel)]="todo.title" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Description</ion-label>
+          <ion-input [(ngModel)]="todo.description" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Is Done</ion-label>
+          <ion-checkbox slot="start" [(ngModel)]="todo.isDone"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Deadline</ion-label>
+          <ion-checkbox slot="start" [(ngModel)]="todo.hasDeadline"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+            <ion-label>Deadline</ion-label>
+            <ion-datetime displayFormat="DD MMM YYYY HH:mm" [disabled]="!todo.hasDeadline" 
+                          [(ngModel)]="todo.deadline"></ion-datetime>
+        </ion-item>
+    </ion-list>
+    <ion-button expand="full" (click)="save()">Save</ion-button>    
+</ion-content>
