@@ -35,7 +35,7 @@ const routes: Routes = [
         // },
               // { path: 'lists', loadChildren: '../lists/lists.module#ListsPageModule' },
         // { path: 'edit-todo', loadChildren: '../edit-todo/edit-todo.module#EditTodoPageModule' },
-        { path: 'add-list', loadChildren: '../add-list/add-list.module#AddListPageModule' },
+        //{ path: 'add-list', loadChildren: '../add-list/add-list.module#AddListPageModule' },
         // { path: 'lists/todo-list/:id', loadChildren: '../todo-list/todo-list.module#TodoListPageModule' },
         { path: 'calendar', loadChildren: '../calendar/calendar.module#CalendarPageModule' },
         { path: 'search', loadChildren: '../search/search.module#SearchPageModule' },
