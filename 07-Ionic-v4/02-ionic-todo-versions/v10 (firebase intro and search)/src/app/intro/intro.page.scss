@@ -1,0 +1,74 @@
+.diag {
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    top: 0;
+    height:66%;
+}
+
+ion-slides {
+    background-color: #EFEFEF !important;
+    font-family: 'Raleway';
+}
+
+ion-slide {
+    height: 100vh;
+    flex-direction: column;
+}
+
+ion-icon {
+    max-width: 50vw;
+    max-height: 50vh;
+    margin-top: 40%;
+    font-size:7em;
+    overflow: hidden;
+}
+  
+h2 {
+    margin-top:30vh !important;
+    font-weight:bold;
+    font-size:1em;
+}
+
+p {
+    width:80%;
+    display:block;
+    margin: 0 auto;
+    font-size:.9em;
+}
+  
+// .swiper-pagination-bullet-active {
+//     background:#C400FF !important;
+// }
+
+// .swiper-pagination {
+//     position: absolute;
+//     bottom: 12% !important;
+// }
+  
+#skip {
+    position:absolute;
+    bottom: 20px;
+    width:100%;
+    background:none !important;
+    text-align:center;
+    cursor:pointer;
+    z-index:5;
+}
+
+
+
+// .step-one {
+//     //background: var(--ion-color-primary);
+//     color: var(--ion-color-primary-contrast);
+// }
+
+// .step-two {
+//     background: var(--ion-color-success);
+//     color: var(--ion-color-success-contrast);
+// }
+
+// .step-three {
+//     background: var(--ion-color-dark);
+//     color: var(--ion-color-dark-contrast);
+// }

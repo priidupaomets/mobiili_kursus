@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Please enter search phrase" (ionInput)="searchTodos($event)" (ionClear)="clearResults()"></ion-searchbar>
+
+  <ion-list *ngIf="isItemAvailable; else noData">
+    <ion-card *ngFor="let item of items">
+      <ion-card-header>
+        <ion-card-title> {{ item.title }}</ion-card-title>
+        <ion-card-subtitle>Found in list: {{ item.listTitle }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+
+  <!-- Placeholder for empty results -->
+  <ng-template #noData>
+    <div class="fullpage">
+      <ion-icon ios="ios-search" md="md-Search"></ion-icon>
+      <h2>Find Todos</h2>
+    </div>
+  </ng-template>
+
+</ion-content>

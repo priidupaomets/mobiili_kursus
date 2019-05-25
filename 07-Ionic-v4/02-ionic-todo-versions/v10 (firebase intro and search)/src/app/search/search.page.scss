@@ -1,0 +1,26 @@
+.fullpage {
+    position: absolute;
+    z-index: 0;
+    width:100%;
+    top: 10%;
+    height:90%;
+    display: flex;           // be responsive with any device screen sizes
+    flex-direction: column;
+    align-items: center !important;     // align all content in center
+    justify-content: center !important; // justify them as well
+    color: #CCCCCC;
+    font-family: 'Raleway';
+}
+
+ion-icon {
+    max-width: 50vw;
+    max-height: 50vh;
+    margin-top: -20%;
+    font-size:7em;
+    overflow: hidden;
+}
+
+h2 {
+    font-size:1.5em;
+    text-align: center;
+}
