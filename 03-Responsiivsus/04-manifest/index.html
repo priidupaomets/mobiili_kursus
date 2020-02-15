@@ -1,0 +1,112 @@
+<html class="no-js">
+<head>
+  <title>Meedia p&auml;ringud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="manifest.json">
+
+  <script src="modernizr-custom.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    header, footer { 
+      border: 1px solid darkblue; 
+      background-color: darkblue; 
+      color: white; 
+      padding: 2 5;
+    }
+    div { border: 1px solid orange; }
+    .sidebar { 
+      border: 1px solid darkred; 
+      background-color: darkred; 
+      color: white; 
+    }
+    .content { border: 1px solid green; }
+    header, .sidebar { display: block; }
+    p { margin: 50; }
+
+    @media screen and (max-width: 500px) /* 576px for Bootstrap small */ 
+    {
+      .sidebar { display: none; }
+      p { margin: 2; }
+    }
+
+    @media (luminosity: normal) {  /* light-level or luminosity */
+      p {
+        background: #fff;
+        color: #333;
+      }
+    }
+
+    @media screen and (luminosity: dim)
+    {
+      p {
+        background: #222;
+        color: #ccc;
+      }
+    }
+
+    @media (luminosity: washed) {
+      p {
+        background: white;
+        color: black;
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meedia p&auml;ringud ja Grid</h1>
+  </header>
+  <div class="row">
+    <div class="sidebar col-lg-3 col-md-4 col-sm-4">
+      <p>Sidebar</p>
+      <p>See siin on k&uuml;ljepealne tekst, mis kirjeldab mingit seotud infot</p>
+    </div>
+    <div class="content col">
+      <p>Sisu</p>
+      <div id="Result"></div>    
+
+      <script>
+        if (Modernizr.canvas) {
+          document.getElementById('Result').innerHTML += "Your Browser <b><u>SUPPORTS</u></b> Canvas";
+        } else {
+          document.getElementById('Result').innerHTML += "Your Browser <b>DOES NOT SUPPORT</b> Canvas";
+        }
+      </script>
+
+      <p>See on dokumendi sisu ning seda v&otilde;ib v&auml;ga palju olla.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at est volutpat, porta magna viverra, 
+        semper neque. Maecenas lacinia mi sit amet ante condimentum lobortis. Maecenas bibendum lorem ac 
+        consectetur maximus. Quisque commodo metus ut sem ullamcorper consequat. Suspendisse ex dui, 
+        vehicula eu viverra nec, accumsan vel sapien. Nunc vel suscipit metus. Etiam egestas congue ante, 
+        aliquam dapibus velit ultricies in. Nam eleifend erat eu lorem aliquet feugiat. Nulla a commodo sapien, 
+        sit amet accumsan quam.
+      </p>
+      <p>Morbi tristique volutpat odio, nec commodo purus pulvinar nec. Vestibulum id euismod metus. Vestibulum 
+        tincidunt in erat ut tincidunt. Proin non sem vitae leo interdum suscipit vel quis odio. Duis nisi tellus, 
+        viverra eget elit a, commodo molestie neque. Suspendisse ullamcorper malesuada dolor, vitae suscipit neque 
+        tempus at. Proin ut consectetur erat.</p>
+
+      <div class="row">
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+        <div class="col-sm">
+          One of three columns
+        </div>
+      </div>    
+    </div>
+  </div>
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 <html class="no-js">
 <head>
-  <title>Meedia päringud</title>
+  <title>Meedia p&auml;ringud</title>
   <script src="modernizr-custom.js"></script>
   <style>
     header, footer { 
@@ -33,7 +33,7 @@
     header, .sidebar { display: block; }
     p { margin: 50; }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
       .sidebar { padding-top: 15px; }
       .sidenav a {font-size: 18px;}
       p { margin: 0; }
@@ -42,24 +42,35 @@
 </head>
 <body>
   <header>
-    <h1>Meedia päringud</h1>
+    <h1>Meedia p&auml;ringud</h1>
   </header>
   <div class="sidebar">
       <p>Sidebar</p>
-      <p>See siin on küljepealne tekst, mis kirjeldab mingit seotud infot</p>
-    </div>
+      <p>See siin on k&uuml;ljepealne tekst, mis kirjeldab mingit seotud infot</p>
+  </div>
   <div class="content">
     <p>Sisu</p>
     <div id="Result"></div>    
 
     <script>
-        if (Modernizr.canvas) {
-          document.getElementById('Result').innerHTML += "<b>HAS</b> Canvas";
-        } else {
-          document.getElementById('Result').innerHTML += "<b>DOES NOT HAVE</b> Canvas";
-        }
+      if (Modernizr.canvas) {
+        document.getElementById('Result').innerHTML += "Your Browser <b><u>SUPPORTS</u></b> Canvas";
+      } else {
+        document.getElementById('Result').innerHTML += "Your Browser <b>DOES NOT SUPPORT</b> Canvas";
+      }
     </script>
-    <p>See on dokumendi sisu ning seda võib väga palju olla.></video></p>
+    <p>See on dokumendi sisu ning seda v&otilde;ib v&auml;ga palju olla.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at est volutpat, porta magna viverra, 
+      semper neque. Maecenas lacinia mi sit amet ante condimentum lobortis. Maecenas bibendum lorem ac 
+      consectetur maximus. Quisque commodo metus ut sem ullamcorper consequat. Suspendisse ex dui, 
+      vehicula eu viverra nec, accumsan vel sapien. Nunc vel suscipit metus. Etiam egestas congue ante, 
+      aliquam dapibus velit ultricies in. Nam eleifend erat eu lorem aliquet feugiat. Nulla a commodo sapien, 
+      sit amet accumsan quam.
+    </p>
+    <p>Morbi tristique volutpat odio, nec commodo purus pulvinar nec. Vestibulum id euismod metus. Vestibulum 
+      tincidunt in erat ut tincidunt. Proin non sem vitae leo interdum suscipit vel quis odio. Duis nisi tellus, 
+      viverra eget elit a, commodo molestie neque. Suspendisse ullamcorper malesuada dolor, vitae suscipit neque 
+      tempus at. Proin ut consectetur erat.</p>
   </div>
   <footer>
     <p>Footer</p>

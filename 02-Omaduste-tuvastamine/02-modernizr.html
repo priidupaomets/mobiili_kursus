@@ -2,17 +2,25 @@
 <head>
   <title>Omaduste test</title>
   <script src="modernizr-custom.js"></script>
+  <style>
+    .canvas body {
+      background-image: linear-gradient(rgb(139, 237, 100), rgb(51, 146, 153));
+    }
+
+    .no-canvas body {
+      background-image: linear-gradient(rgb(248, 53, 53), rgb(153, 51, 59));
+    }
+  </style>
 </head>
 <body>
   <h1>Omaduste test</h1>
-  <div id="Result">
-  </div>
+  <h2 id="Result"></h2>
 
   <script>
   if (Modernizr.canvas) {
-    document.getElementById('Result').innerHTML += "<b>HAS</b> Canvas";
+    document.getElementById('Result').innerHTML += "Your Browser <b><u>SUPPORTS</u></b> Canvas";
   } else {
-    document.getElementById('Result').innerHTML += "<b>DOES NOT HAVE</b> Canvas";
+    document.getElementById('Result').innerHTML += "Your Browser <b>DOES NOT SUPPORT</b> Canvas";
   }
   </script>
 </body>
