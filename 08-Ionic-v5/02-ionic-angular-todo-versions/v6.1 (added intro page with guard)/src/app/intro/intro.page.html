@@ -1,0 +1,37 @@
+<ion-content>
+  <ion-slides pager="true" (ionSlideReachEnd)="lastSlideReached()">
+    <ion-slide class="step-one">
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon name="analytics" color="primary"></ion-icon>
+      </div>
+      <div>
+        <h2>Step 1</h2>
+        <p>Step 1 description</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide class="step-two">
+        <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+          <ion-icon name="trophy" color="primary"></ion-icon>
+        </div>
+        <div>
+            <h2>Step 2</h2>
+            <p>Step 2 description</p>
+        </div>
+    </ion-slide>
+
+    <ion-slide class="step-three">
+        <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+          <ion-icon name="chatbubbles" color="primary"></ion-icon>
+        </div>
+        <div>
+            <h2>Step 3</h2>
+            <p>Step 3 decription</p>
+        </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-button (click)="finish()" id="skip">{{skipMessage}}</ion-button>
+
+</ion-content>

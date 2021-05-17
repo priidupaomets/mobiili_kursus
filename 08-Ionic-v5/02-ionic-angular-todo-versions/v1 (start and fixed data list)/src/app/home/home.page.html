@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      TODO List
+    </ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">TODO List</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let todo of todos" ">
+      {{todo.title}}
+    </ion-item>
+  </ion-list>
+</ion-content>
