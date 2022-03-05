@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic-todo</string>
+    <string name="title_activity_main">ionic-todo</string>
+    <string name="package_name">ee.tlu.hk.mobilecourse.ionictodo</string>
+    <string name="custom_url_scheme">ee.tlu.hk.mobilecourse.ionictodo</string>
+</resources>

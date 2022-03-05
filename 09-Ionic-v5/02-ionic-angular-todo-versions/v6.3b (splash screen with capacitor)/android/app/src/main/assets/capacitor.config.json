@@ -1,0 +1,6 @@
+{
+	"appId": "ee.tlu.hk.mobilecourse.ionictodo",
+	"appName": "ionic-todo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
