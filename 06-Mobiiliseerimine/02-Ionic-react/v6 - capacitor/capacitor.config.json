@@ -1,0 +1,6 @@
+{
+	"appId": "ee.tlu.hk.priidu.tempconv",
+	"appName": "Temperature Converter",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
